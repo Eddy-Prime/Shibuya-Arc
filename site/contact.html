@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>各話あらすじ</title>
+    <link rel="stylesheet" href="episodes.css">
+    <link rel="shortcut icon" href="./images/logo.webp" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="./images/PrisonRealm.png">
+</head>
+<body id="sub" class="active">
+
+    <article id="fullwrap" class="active">
+        <header>
+            <article class="navbar">
+                <!-- Add your navigation links here -->
+                  <nav class="navbar">
+                    <article class="logo">
+                        <a href="index.html"><img src="./images/logo.webp" alt="呪術廻戦"></a>
+                    </article>
+                    <ul class="nav-links">
+                        <li><a href="index.html">SHIBUYA ARC</a></li>
+                        <li><a href="gojo.html">CHARACTERS</a></li>
+                        <li><a href="episodes.html">EPISODES</a></li>
+                        <li><a href="specification.html">SPECIFICATION</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </article>
+
+            <!--<div id="triggerBox" class="sp"><a class="menu-trigger" href="javascript:;"><small>MENU</small></a></div>-->
+        </header>
+
+        <section id="subContWrap">
+                <h2 class="isVer">
+                    <span class="cinzel">CONTACT</span>
+                    <span>Please reach out for help if you run into a Technical issue</span>
+                </h2>
+
+                <article class="subContIn">
+                            <p align="center">
+                            <span class="commentLinks">
+                        
+                            </span>
+                            </p><br><br>
+
+
+                            <div class="contact-form">
+                                <form action="#" method="post">
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="name" required>
+            
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required>
+            
+                                    <label for="message">Message:</label>
+                                    <textarea id="message" name="message" rows="4" required></textarea>
+            
+                                    <button type="submit">Send Message</button>
+                                    <button type="button" class="clear" onclick="clearForm()">Clear</button>
+                                </form>
+                </article>
+
+               
+            </section>
+
+                <footer>
+                    <span>&copy; 2023 Eddy</span> 
+                </footer>
+    </article>
+
+    <!-----//////////clear button/\\\\\\\\\\\-->
+    <script>
+        function clearForm() {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+        }
+    </script>
+ 
+</body>
+</html>

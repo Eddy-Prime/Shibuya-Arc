@@ -1,0 +1,512 @@
+@charset "UTF-8";
+/*//////////////////////////////THE START!!!!!\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*///////////////////(•̀﹏•́)ｂ/////////////////*/
+* {
+  font-family: 游明朝体, yumincho, 游明朝, yu mincho, ヒラギノ明朝 pron w3, hiragino mincho pron w3, HiraMinProN-W3, ヒラギノ明朝 pron, hiragino mincho pron, ヒラギノ明朝 pro, hiragino mincho pro, hgs明朝e, ＭＳ Ｐ明朝, ms pmincho, serif;
+}
+
+body {
+  background-image: url("./images/bg_sub.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 游明朝体, yumincho, 游明朝, yu mincho, ヒラギノ明朝 pron w3, hiragino mincho pron w3, HiraMinProN-W3, ヒラギノ明朝 pron, hiragino mincho pron, ヒラギノ明朝 pro, hiragino mincho pro, hgs明朝e, ＭＳ Ｐ明朝, ms pmincho, serif;
+  font-size: 14px;
+  min-width: 1240px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.07em;
+  color: #fff;
+  background-color: #000;
+  -webkit-text-size-adjust: 100%;
+  word-wrap: break-word;
+  margin: 0; /* Remove default margin */
+}
+
+header {
+  position: relative;
+  background-image: url("./images/head_bg.webp"); /* Add the path to your header background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+p {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+/*//////////////////////PAGE CONTENT\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.page-content p, .page-content section {
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 1.75;
+  margin: 0 0 24px;
+  overflow-wrap: break-word;
+}
+
+.page-content p + p {
+  margin-top: 24px;
+}
+
+.page-content img {
+  vertical-align: middle;
+}
+
+img.lazyloaded {
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+
+.thumbimage {
+  background-color: unset;
+  border: unset;
+}
+
+.gallery-icon-container {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.portable-infobox.pi-theme-juju {
+  background-color: transparent;
+}
+
+.pi-border-color.pi-theme-juju {
+  border-color: transparent;
+}
+
+.pi-background {
+  background-color: var(--pi-background);
+}
+
+.pi-border-color {
+  border-color: var(--pi-border-color);
+}
+
+.portable-infobox {
+  --pi-background: var(--theme-page-background-color);
+  --pi-secondary-background: var(--theme-accent-color);
+  --pi-secondary-background--label: var(--theme-accent-label-color);
+  --pi-border-color: rgba(var(--theme-accent-color--rgb),0.5);
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  clear: right;
+  float: right;
+  margin: 0 0 18px 18px;
+  width: 270px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+.text {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+article {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*/////////////////////////////// Navbar \\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.navbar {
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center;
+  font-family: 游明朝体, yumincho, 游明朝, yu mincho, ヒラギノ明朝 pron w3, hiragino mincho pron w3, HiraMinProN-W3, ヒラギノ明朝 pron, hiragino mincho pron, ヒラギノ明朝 pro, hiragino mincho pro, hgs明朝e, ＭＳ Ｐ明朝, ms pmincho, serif;
+  font-size: 14px;
+}
+
+/* Style the logo */
+.logo img {
+  width: 150px;
+  height: 70px;
+  margin-right: 50px; /* Add margin to the right for spacing */
+}
+
+/* Style the navigation links container */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation links */
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Add space between navbar list items and logo */
+.nav-links {
+  margin-right: auto; /* Push the navbar list items to the left */
+}
+
+/*////////////////// Media query for responsiveness\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+@media only screen and (max-width: 768px) {
+  /* Adjust header styles for smaller screens */
+  header {
+    padding: 10px; /* Adjust the padding for the header */
+  }
+  /* Adjust the logo size for smaller screens */
+  .logo img {
+    width: 120px; /* Adjust the logo width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Adjust margin for spacing */
+  }
+  /* Adjust the navigation links for smaller screens */
+  .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center-align links */
+    margin-top: 20px; /* Add space between logo and links */
+    margin-right: 0; /* Remove margin for smaller screens */
+  }
+  /* Adjust episode thumbnail styles for smaller screens */
+  .normalList li {
+    width: 100%; /* Full width for smaller screens */
+    text-align: center;
+    box-sizing: border-box;
+    padding: 4px;
+  }
+  .epThumbWrap {
+    width: 100%; /* Full width for smaller screens */
+  }
+  /* Add hover effect to the episode thumbnails for smaller screens */
+  .epThumbWrap:hover {
+    transform: none; /* Remove scaling on hover for smaller screens */
+    transition: none; /* Remove transition for smoother hover effect */
+  }
+  /* Adjust the menu trigger styles for smaller screens */
+  .menu-trigger {
+    width: 50px; /* Adjust the width of the menu trigger */
+  }
+  .menu-trigger span {
+    width: 20px; /* Adjust the width of the menu trigger spans */
+  }
+  .menu-trigger small {
+    display: none; /* Hide the "CLOSE" text for smaller screens */
+  }
+  /* Show the menu links when the menu is active */
+  .navbar.active {
+    display: flex;
+  }
+}
+/*/////////////////||MENU\\\\\\\\\\\\\\\\\\\\
+
+
+\*/
+/*//////////////////////THE Shibuya arc, EPISODES, Characters, specification & Contact WRAP\\\\\\\\\\\\\\\\\\\\\\*/
+#subContWrap {
+  margin-bottom: 160px;
+  padding: 90px;
+}
+
+#subContWrap > h2 {
+  text-align: center;
+  display: table;
+  margin: 0 auto 80px;
+  padding: 0 66px; /*////This the padding for the horns*/
+  position: relative;
+  color: #fff;
+}
+
+#subContWrap > h2:before {
+  content: "";
+  background: url(images/deco01_l.webp) no-repeat 0 0/100%;
+  width: 41px;
+  height: 81px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#subContWrap > h2:after {
+  content: "";
+  background: url(images/deco01_r.webp) no-repeat 0 0/100%;
+  width: 41px;
+  height: 81px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#subContWrap > h2 span {
+  line-height: 1;
+  display: block;
+  text-shadow: 0px 0px 10px #2e89e4;
+}
+
+#subContWrap > h2 span:first-of-type {
+  font-size: 42px;
+  margin-bottom: 20px;
+  padding-top: 2px;
+}
+
+#subContWrap > h2 span:last-of-type {
+  font-size: 16px;
+}
+
+.inTtl_01 {
+  text-align: center;
+  text-shadow: 0px 0px 10px #2e89e4;
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 56px;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/*/////////||||||||||||||||||||THE IMAGES LIST\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.normalList {
+  list-style-type: none;
+  padding: 70px;
+  margin: 0;
+  text-align: center;
+}
+
+.normalList li {
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+  text-align: center;
+  width: calc(33.333% - 30px); /* 3 items per row, considering margin */
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.epThumbWrap {
+  width: 110%;
+  border: 1px solid rgba(245, 241, 241, 0.315) cea;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.epThumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Make the image responsive */
+}
+
+.epThumbWrap p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Add hover effect */
+.epThumbWrap:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/*/////////BTN Animation\\\\\\\\\\*/
+.linkA {
+  position: relative;
+}
+
+.linkA:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #000; /*<--------this for the dimmed look for the imgs*/
+  -webkit-mask: url("./images/btn_sprite.webp");
+  mask: url("./images/btn_sprite.webp");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  animation: ani 0.7s steps(22) forwards;
+}
+
+.linkA:hover:after {
+  animation: ani2 0.7s steps(22) forwards;
+}
+
+.linkA_2 {
+  position: relative;
+}
+
+.linkA_2:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #000;
+  -webkit-mask: url("./images/btn_sprite.webp");
+  mask: url("./images/btn_sprite.webp");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  opacity: 0.4;
+  animation: ani2 0.7s steps(22) forwards;
+}
+
+.linkA_2:hover:after {
+  animation: ani 0.7s steps(22) forwards;
+}
+
+.linkA > span,
+.linkA_2 > span,
+.linkB > span,
+.linkC > span {
+  position: relative;
+  z-index: 2;
+}
+
+.linkB {
+  position: relative;
+}
+
+.linkB:before {
+  content: "";
+  width: 0;
+  height: 50%;
+  background-color: #1063af;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  position: absolute;
+  transition: 0.5s cubic-bezier(0.02, 0.88, 0.58, 1);
+  z-index: 1;
+}
+
+.linkB:after {
+  content: "";
+  width: 0;
+  height: 50%;
+  background-color: #1063af;
+  bottom: 0;
+  right: 0;
+  opacity: 0.4;
+  position: absolute;
+  transition: 0.5s cubic-bezier(0.02, 0.88, 0.58, 1);
+  z-index: 1;
+}
+
+.linkB:hover:before,
+.linkB:hover:after {
+  width: 100%;
+}
+
+.linkC {
+  position: relative;
+}
+
+.linkC:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.4;
+  background: #1063af;
+  -webkit-mask: url("./images/btn_sprite.webp");
+  mask: url("./images/btn_sprite.webp");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  animation: ani 0.7s steps(22) forwards;
+}
+
+.linkC:hover:after {
+  animation: ani2 0.7s steps(22) forwards;
+}
+
+.linkC.isactive:after {
+  animation: ani2 0.7s steps(22) forwards;
+  color: #ece48b;
+}
+
+/*///////////////////Specification span or commant links\\\\\\\\\\\\\\\\\\\*/
+.commentLinks {
+  margin-top: 10px;
+  display: block;
+}
+
+.commentLinks > span {
+  margin-bottom: 10px;
+  display: inline-block;
+  border: 2px solid #c9dcf0; /* Adjust the color and width of the border */
+  padding: 8px; /* Add padding for better visual appearance */
+  background-color: rgba(255, 255, 255, 0); /* Add a background color for better visibility */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.commentLinks > span small {
+  font-size: 12px;
+}
+
+.commentLinks > span a {
+  text-decoration: none; /* Remove default link underline */
+  color: #ffffff; /* Set the text color for the links */
+}
+
+.commentLinks > span:hover {
+  background-color: #b3d9ff; /* Change the background color on hover */
+}
+
+/*///////////////////CONTACT FORM\\\\\\\\\\\\\\\\\\\\*/
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background-color: rgba(0, 102, 204, 0.333);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: 游明朝体, yumincho, 游明朝, yu mincho, ヒラギノ明朝 pron w3, hiragino mincho pron w3, HiraMinProN-W3, ヒラギノ明朝 pron, hiragino mincho pron, ヒラギノ明朝 pro, hiragino mincho pro, hgs明朝e, ＭＳ Ｐ明朝, ms pmincho, serif;
+}
+
+.contact-form button:hover {
+  background-color: #004080;
+}
+
+/* ///////////////////////////||||||||||||FOOTER\\\\\\\\\\\\\\\\\ */
+footer {
+  background-image: url("./images/head_bg.webp"); /* Add the path to your footer background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px; /* Add padding for spacing */
+  text-align: center;
+  color: #fff; /* Adjust text color for better visibility */
+}/*# sourceMappingURL=style.css.map */
